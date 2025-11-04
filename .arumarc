@@ -1,2 +1,15 @@
+alias gc='git commit'
+alias gs='git switch'
+
+nb() { # Create a new git branch with format: aruma-YYYYMMDD-topic
+    if [ -z "$1" ]; then
+        echo "Usage: nb <topic>"
+        return 1
+    fi
+    local topic=$1
+    local date=$(date +%Y%m%d)
+    git switch -c "aruma-${date}-${topic}"
+}
+
 alias docker-compose='docker compose'
 alias dc='docker compose'
