@@ -1,3 +1,4 @@
+# git
 alias gc='git commit'
 alias gs='git switch'
 
@@ -11,5 +12,6 @@ nb() { # Create a new git branch with format: aruma-YYYYMMDD-topic
     git switch -c "aruma-${date}-${topic}"
 }
 
+# docker
 alias docker-compose='docker compose'
 alias dc='docker compose'
